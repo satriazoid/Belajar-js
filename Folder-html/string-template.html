@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        const name = "Satria Alfa Rizki";
+        const fristName = "Satria";
+        const middleName = "Alfa";
+        const lastname = "Rizki";
+        const template = `Name : ${fristName} ${middleName} ${lastname}`;
+        // $= menarik varibel data di dalam kurung kurawal
+        // const template = `Name : ${name}`;
+
+        console.info(template);
+
+        const nilai = 71; // Data kostan atau data yang tidak bisa di rubah
+        const template2 = `Name : ${name}, Lulus : ${nilai > 70}`; //indeks nilai tipe data > 70
+
+        console.info(template2); // Menampilkan const info type data
+
+        const multiline = `Nama saya satria
+sekarang nganggur
+sering juga ngoding dan main game`;
+
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+
+    </script>
+</body>
+</html>
