@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name;
+
+        if(name === undefined){
+            console.info("UNDEFINED");
+        }else{
+            alert(DEFINED);
+        }
+
+        const names = ["Eko", "Kurniawan"];
+        if(names[2] === undefined){
+            console.info("ARRAY UNDEFINED");
+        }else{
+            console.info("DEFINED");
+        }
+        /* Jika data yang di pangil adalah dua maka hasil nya akan undefined kenapa?
+        karena tidak ada data di dalam nya yang belum kita input
+        jika yang di panggil data 0 dan 1 maka hasil nya defined */
+
+        const person = {
+            // name:"Satria"
+            // Hasil nya akan Obeject defined karena ada data name
+            // Jika tidak ada data maka hasil nya Obeject undefined
+        };
+        if (person.name === undefined) {
+            console.info('OBJECT UNDEFINED');
+        }else {
+            console.info("OBEJCT DEFINED");
+        }
+    </script>
+</body>
+</html>
