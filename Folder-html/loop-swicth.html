@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop-swicth</title>
+</head>
+<body>
+    <script>
+        const nilai = "B";
+        
+        switch (nilai){ // tipe loop switch
+            case "A":
+                document.writeln("<p>Anda lulus dengan nilai: A</p>");
+                break;
+            case "B":
+                document.writeln("<p>Anda lulus dengan nilai: B</p>");
+                break;
+            case "C":
+                document.writeln("<p>Anda lulus dengan nilai: C</p>");
+                break;
+            case "D":
+                document.writeln("<p>Anda Tidak lulus dengan nilai: D</p>");
+                break;
+            default:
+                document.writeln("<p>Anda dinyayakan tidak lulus dengan nilai: E</p>");
+        }
+
+        if(nilai === "A") {
+            document.writeln("<p>Anda lulus dengan nilai A</p>");
+        }else if (nilai === "B" || nilai === "C") {
+            document.writeln("<p>Anda lulus dengan nilai Cukup baik<p>");
+        }else if (nilai === "D") {
+            document.writeln("<p>Anda tidak lulus dengan nilai : D")
+        }
+    </script>
+</body>
+</html>

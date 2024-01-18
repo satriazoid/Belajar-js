@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optional-chaining</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            address:{
+                country : "indonesia"
+            }
+        };
+
+        const country = person?.address?.country;
+
+        // if(person.address !== undefined && person.address !==null){
+        //     country
+        // }
+
+        document.writeln(`SUKSES`);
+
+        document.writeln(`<p>${country}</p>`);
+        
+        document.writeln(`SUKSES`);
+
+    </script>
+</body>
+</html>
