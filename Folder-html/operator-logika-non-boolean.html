@@ -8,6 +8,10 @@
 <body>
     <script>
         
+        // operator logika OR di tandai dengan \\
+        /* dia bersifat kebalikan dari operator and
+        karena dia mengambil dari sisi kiri
+        */
         console.info("hello" || "");
         console.info("" || []);
         console.info("0" || "NOL");
@@ -23,6 +27,26 @@
         const name = person.fristname || person.lastname;
         console.info(name);
 
+        // operator logika and di tandai dengan &&
+        /* dia bersifat kebalikan dari operator or
+        karena dia mengambil dari sisi kanan baru
+        */
+        console.info("hello" && ""); // "" 
+        console.info("" && []); // [] 
+        console.info("0" && "NOL"); // "NOL"
+        console.info(0 && "NOL"); // "NOL"
+        console.info(null && "NOL"); // "NOL"
+        console.info(undefined && "UNDEFINED"); // "UNDEFINED"
+        console.info("undefined" && "null"); // "null"
+
+        const persone = {
+            fristname: "Eko", // indeks data "" atau kosong maka di ambil lastname
+            lastname: "Khannedy" // indeks data "" kosong maka di ambil fristname
+        };
+        const names = persone.fristname && persone.lastname;
+        console.info(names); 
+        /* maka muncul khannedy karena and di ambil dari sisi kanan
+        */
     </script>
 </body>
 </html>
