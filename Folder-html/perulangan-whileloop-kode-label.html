@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kode continue dalam perulangan</title>
+    <title>continue di lebel</title>
 </head>
 <body>
     <script>
@@ -13,7 +13,7 @@
                 loopj:
                 for(let j = 0; j < 100; j++) {
                     if(j > 10){
-                        continue;
+                        continue loopi;
                     }
                     console.info(`${i} - ${j}`);
                 }
