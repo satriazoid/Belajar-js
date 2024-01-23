@@ -20,6 +20,28 @@
         /* Return say; akan di tangkap oleh result yang
         di bawah jadi di di isi/ditangkap oleh const result
         */
+
+        function getFinalValue(value){
+            if(value > 85) {
+                return "A";
+            }
+            if(value > 80) {
+                return "B";
+            }
+            if(value > 70) {
+                return "C";
+            }
+            if(value > 60) {
+                return "D";
+            }else {
+                return "E";
+            }
+        }
+
+        const finalValue = getFinalValue(); // jika ingin mendapatakan data A,B,C,D
+        // Maka isikan dengan angka yang tertera di atas jika tidak dia kana ke else
+        // Karena tidak ada yang value dalem function
+        document.writeln(`<p>${finalValue}</p>`);
     </script>
 
 </body>
