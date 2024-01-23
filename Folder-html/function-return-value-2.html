@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function-return-value</title>
+    <!-- Ini mencoba return -->
+</head>
+<body>
+    
+    <script>
+
+        function sayHello(fristName, lastName){
+            const say = `Hello ${fristName} ${lastName}`;
+            return say;
+        }
+
+        const result = sayHello("Eko", "Khannedy"); 
+        document.writeln(`<p> ${result}</p>`);
+        /* Return say; akan di tangkap oleh result yang
+        di bawah jadi di di isi/ditangkap oleh const result
+        */
+    </script>
+
+</body>
+</html>
