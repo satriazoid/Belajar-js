@@ -22,15 +22,18 @@
             // Output Eko, Kurniawan, Khannedy
         }
         
-        function* buatGanjil(value){
+        function buatGanjilArray(value){
+            const result = []
             for (let i = 1; i <= value; i++) {
                 if (i % 2 === 1) {
-                    yield i;
+                    console.info(`Yield ${i}`);
+                    result.push(i);
                 }
             }
+            return result;
         }
 
-        const numbers = buatGanjil(100);
+        const numbers = buatGanjilArray(100);
         for (const number of numbers){
             console.info(number); 
             // Output ganjil dari 100
