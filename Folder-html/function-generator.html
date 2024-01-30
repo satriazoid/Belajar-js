@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Function generator</title>
 </head>
 <body>
     <script>
@@ -22,6 +22,19 @@
             // Output Eko, Kurniawan, Khannedy
         }
         
+        function* buatGanjil(value){
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    yield i;
+                }
+            }
+        }
+
+        const numbers = buatGanjil(100);
+        for (const number of numbers){
+            console.info(number); 
+            // Output ganjil dari 100
+        }
 
     </script>
 </body>
