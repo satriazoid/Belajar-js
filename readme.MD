@@ -9,4 +9,7 @@ function sebagai value => menit 5:44:33
 
 Closure => menit 6:47:23
 
+note: saya cuman membereskan beberapa code yang
+kurang saya pahami
+
 creadit@satriazoid

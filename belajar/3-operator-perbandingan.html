@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator perbandingan - mencoba</title>
+    <!-- Ini mencoba type data let -->
+</head>
+<body>
+    
+    <script>
+
+        let result = 5 == "5"; // sama dengan
+        document.writeln("<p>" + result + "</p>") // true
+        
+        result = 5 === "5"; // sama dengan sama tipe
+        document.writeln("<p>" + result + "</p>") // false
+
+        result = 5 > "10"; // lebih dari
+        document.writeln("<p>" + result + "</p>") // false
+        
+        result = 5 < "10"; // kurang dari
+        document.writeln("<p>" + result + "</p>") // true
+        
+        result = 5 <= "10"; // kurang dari sama dengan
+        document.writeln("<p>" + result + "</p>") // true
+        
+        result = 5 >= "10"; // lebih dari sama dengan
+        document.writeln("<p>" + result + "</p>") // false
+        
+        result = 5 != "10"; // tidak sama dengan
+        document.writeln("<p>" + result + "</p>") // true
+        
+        result = 5 !== "10"; // Tidak sama dengan atau tidak sama tipe
+        document.writeln("<p>" + result + "</p>") // true
+        
+
+    </script>
+
+</body>
+</html>
