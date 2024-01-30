@@ -1,7 +1,7 @@
 materi belajar di 
 https://youtu.be/SDROba_M42g?si=K_hyO_9xTIRIRmrw
 
-sekarang di menit 5:12:14
+sekarang di menit 07 : 00 : 14
 
 // PR pemahaman
 
