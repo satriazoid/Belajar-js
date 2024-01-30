@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local scope</title>
+</head>
+<body>
+    <script>
+
+        function first(){
+            // Local scope second
+            let firstVarible = "first";
+            console.info(firstVarible); // SUKSES
+        }
+
+        function second(){
+            // Local scope second
+            let secondVarible = "Second";
+            console.info(secondVarible); // SUKSES
+        }
+
+        first();
+        second();
+
+        console.info(secondVarible); // ERROR
+        console.info(firstVarible);   // ERROR
+
+    </script>
+</body>
+</html>

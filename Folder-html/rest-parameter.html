@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtion rest parameter</title>
+</head>
+<body>
+    <script>
+        
+        function sum(name, ...data) {
+            let total = 0;
+            for (const item of data) {
+                total += item;
+            // titik tiga di depan data adalah rest parameter
+            }
+            document.writeln(`<p>Total ${name} is ${total}</p>`);
+        }
+
+        sum("Orange", 10, 20, 30, 40, 50);
+        sum("Apple", 10, 20, 30, 40, 50);
+        sum("Banana", 10, 20, 30, 40, 50);
+
+        // const values =[10, 10, 10, 10, 10];
+        // sum("Test", values); // output = Total Test is 010,10,10,10,10
+        // => array tidak bisa di konferensi 
+        // ke rest paratameter
+
+
+        const values =[10, 10, 10, 10, 10];
+        sum("Test", ...values); 
+        // maka gunakan titik 3 di depan data array
+    </script>
+</body>
+</html>

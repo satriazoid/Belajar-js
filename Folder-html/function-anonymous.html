@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymus function</title>
+</head>
+<body>
+    <script>
+        const say = function(name){
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        say("Eko"); // Output Hello Eko
+        say("Budi"); // Output Hello Budi
+
+        function giveMeName(callback){
+            callback("Eko");
+        }
+
+        giveMeName(say); // Output Hello Eko
+
+        giveMeName(function(name){
+            document.writeln(`<p>Hi ${name}</p>`);
+        }); // Output Hi Eko
+
+
+    </script>
+</body>
+</html>

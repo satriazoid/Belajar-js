@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function arrow</title>
+</head>
+<body>
+    <script>
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`;
+        //     console.info(say); // Output Hello Eko
+        // }
+        // sayHello("Eko"); // Output Hello Eko
+
+
+        // const sayHello = (name) => console.info(`Hello ${name}`)
+        // Output Hello Eko
+
+        const sayHello = name => console.info(`Hello ${name}`)
+        // Output Hello Eko
+
+        sayHello("Eko"); 
+        // Output Hello Eko
+
+        // const sum = (first, second) => {
+        //     return first + second;
+        // } Output 200
+
+        const sum = (first, second) => first + second; // Output 200
+        // Lebih simple
+        
+        console.info(sum(100, 100)); 
+
+        function giveMeName(callback){
+            callback("Eko");
+        }
+
+        // Anonymous Function
+        giveMeName(function(name){
+            console.info(`Hello ${name}`);
+        });
+
+        // Arrow Function
+        giveMeName(name => console.info(`Hello ${name}`))
+
+// Penjelasan
+/*
+Arrow function tanpa block 
+- Jika sebuah arrow function isi nya sederhana, misal hanya satu garis
+- Kita bisa membuat arrow function tanpa harus menggunakan block {}
+*/
+
+// Penjelasan
+/*
+Arrow function tanpa kurung parameter
+- Jika parameter di arrow function hanya satu,
+kita bisa tidak menggunakan kurung pada parameter
+*/
+    </script>
+</body>
+</html>

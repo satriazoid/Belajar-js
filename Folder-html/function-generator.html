@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function generator</title>
+</head>
+<body>
+    <script>
+
+        function* createNames(){
+            yield "Eko";
+            yield "Kurniawan";
+            yield "Khannedy";
+        }
+
+        const names = createNames();
+        // console.info(names[0]); // undefined
+
+        for (const name of names) {
+            console.info(name);
+            // Output Eko, Kurniawan, Khannedy
+        }
+        
+        // lazy
+        function* buatGanjil(value){
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    console.info(`Yield ${i}`);
+                    yield i;
+                }
+            }
+            return result;
+        } // Output yield angka
+
+        // eager
+        function buatGanjilArray(value){
+            const result = []
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    console.info(`Yield ${i}`);
+                    result.push(i);
+                }
+            }
+            return result;
+        } // Output Yield dengan angka / Angka ganjil
+
+        // const numbers = buatGanjil(100);
+        // for (const number of numbers){
+        //     console.info(number); 
+        //     // Output ganjil dari 100
+        // } => menjalankan ganjil -> lazy
+
+        // const numbers = buatGanjilArray(100);
+        // for (const number of numbers){
+        //     console.info(number); 
+        //     // Output ganjil dari 100
+        // } => menjalankan ganjil -> eager
+
+        const numbers = buatGanjil(100);
+
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
+
+    </script>
+</body>
+</html>
