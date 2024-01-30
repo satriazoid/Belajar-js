@@ -32,6 +32,17 @@
         
         console.info(sum(100, 100)); 
 
+        function giveMeName(callback){
+            callback("Eko");
+        }
+
+        // Anonymous Function
+        giveMeName(function(name){
+            console.info(`Hello ${name}`);
+        });
+
+        // Arrow Function
+        giveMeName(name => console.info(`Hello ${name}`))
 
 // Penjelasan
 /*
