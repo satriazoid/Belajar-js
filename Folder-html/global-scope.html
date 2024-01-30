@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global scope</title>
+</head>
+<body>
+    <script>
+
+        // Global scope
+        let counter = 0;
+
+        // Global scope
+        function hitme(){
+            // Local scope hitme
+            counter++;
+        }
+
+        // Global scope
+        function other(){
+            // Local scope other
+        }
+
+        hitme();
+        hitme();
+
+        console.info(counter); 
+        // Output nya 2 karena di panggil 2 kali
+
+        function first(){
+            // Local scope second
+            let firstVarible = "Second";
+        }
+
+        function first(){
+            // Local scope second
+            let secondVarible = "Second";
+        }
+
+        first();
+        second();
+
+        console.info(secondVarible); // ERROR
+        consle.info(firstVarible);   // ERROR
+    </script>
+</body>
+</html>
