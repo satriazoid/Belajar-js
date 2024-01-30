@@ -9,8 +9,15 @@
     <script>
         function sayHello(name){
             document.writeln(`<p>Hello ${name}</p>`);
-
     }
+
+    sayHello("EKo");
+
+    const say = sayHello; // function variable
+
+    sayHello("Eko");
+    say("Budi");
+
     </script>
 </body>
 </html>
