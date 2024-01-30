@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function sayHello(name){
+            alert(`Hello ${name}`);
+        };
+
+        // Object method
+        const person = {
+            name: "Eko",
+            sayHello: function (name){
+                alert(`Hello ${name}`);
+            }
+        };
+
+        // const person = {
+        //     name: "Eko",
+        //     sayHello: sayHello
+        // };
+
+        person.sayHello("Budi") 
+        // Output Hello Budi
+    </script>
+</body>
+</html>
