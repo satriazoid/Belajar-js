@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funtion rest parameter</title>
+    <title>Document</title>
 </head>
 <body>
+    
     <script>
-        
         function sum(name, ...data) {
             let total = 0;
             for (const item of data) {
@@ -29,7 +29,17 @@
 
         const values =[10, 10, 10, 10, 10];
         sum("Test", ...values); 
-        // maka gunakan titik 3 di depan data array
+
+        function oldSum(){
+            let total = 0;
+            for (const argument of arguments) {
+                total += argument;
+            }
+            document.writeln(`<p>Total is ${total}</p>`);
+        }
+
+        oldSum(1, 2, 3, 4, 5); // output 15
     </script>
+    
 </body>
 </html>
