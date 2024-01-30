@@ -22,6 +22,18 @@
             // Output Eko, Kurniawan, Khannedy
         }
         
+        // lazy
+        function* buatGanjil(value){
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    console.info(`Yield ${i}`);
+                    yield i;
+                }
+            }
+            return result;
+        } // Output yield angka
+
+        // eager
         function buatGanjilArray(value){
             const result = []
             for (let i = 1; i <= value; i++) {
@@ -31,13 +43,25 @@
                 }
             }
             return result;
-        }
+        } // Output Yield dengan angka / Angka ganjil
 
-        const numbers = buatGanjilArray(100);
-        for (const number of numbers){
-            console.info(number); 
-            // Output ganjil dari 100
-        }
+        // const numbers = buatGanjil(100);
+        // for (const number of numbers){
+        //     console.info(number); 
+        //     // Output ganjil dari 100
+        // } => menjalankan ganjil -> lazy
+
+        // const numbers = buatGanjilArray(100);
+        // for (const number of numbers){
+        //     console.info(number); 
+        //     // Output ganjil dari 100
+        // } => menjalankan ganjil -> eager
+
+        const numbers = buatGanjil(100);
+
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
 
     </script>
 </body>
