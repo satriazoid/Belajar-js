@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function* createNames(){
+            yield "Eko";
+            yield "Kurniawan";
+            yield "Khannedy";
+        }
+
+        const names = createNames();
+        // console.info(names[0]); // undefined
+
+        for (const name of names) {
+            console.info(name);
+            // Output Eko, Kurniawan, Khannedy
+        }
+        
+
+    </script>
+</body>
+</html>
