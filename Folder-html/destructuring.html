@@ -122,6 +122,32 @@
             console.info(middleName);
             console.info(lastName);
         };
+
+        {
+            const person = {
+            fristName: "eko",
+            lastName: "Khannedy",
+            address : {
+                street: "jalan belum ada",
+                city: "jakarta",
+                country: "indonesia",
+            },
+            hobby: "game",
+            channel: "Pzn"
+            
+        };
+
+        let { fristName, lastName, address: {city, 
+        street, country}, ...other} = person
+
+        console.info(fristName); // output eko
+        console.info(lastName); // output khannedy
+        console.info(city); // output jakarta
+        console.info(street); // output belum ada 
+        console.info(country); // output indonesia
+        console.info(other);
+        
+        };
     </script>
 </body>
 </html>
