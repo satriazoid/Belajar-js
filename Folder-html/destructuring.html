@@ -51,6 +51,33 @@
         console.info(other);
         
         };
+
+        {
+        const person = {
+            fristName: "eko",
+            lastName: "Khannedy",
+            address : {
+                street: "jalan belum ada",
+                city: "jakarta",
+                country: "indonesia",
+            },
+            hobby: "game",
+            channel: "Pzn"
+            
+        };
+
+
+        let { fristName, lastName, addres: {city, 
+            street, country} } = person
+
+        console.info(fristName);
+        console.info(lastName);
+        console.info(city);
+        console.info(street);
+        console.info(country);
+        console.info(other);
+        
+        };
     </script>
 </body>
 </html>
