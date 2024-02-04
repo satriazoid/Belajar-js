@@ -125,27 +125,15 @@
 
         {
             const person = {
-            fristName: "eko",
+            fristName: "Eko",
             lastName: "Khannedy",
-            address : {
-                street: "jalan belum ada",
-                city: "jakarta",
-                country: "indonesia",
-            },
-            hobby: "game",
-            channel: "Pzn"
-            
         };
 
-        let { fristName, lastName, address: {city, 
-        street, country}, ...other} = person
+        let { fristName, lastName, middleName = "Kurniawan"} = person
 
-        console.info(fristName); // output eko
+        console.info(fristName); // output Eko
         console.info(lastName); // output khannedy
-        console.info(city); // output jakarta
-        console.info(street); // output belum ada 
-        console.info(country); // output indonesia
-        console.info(other);
+        console.info(middleName); // output kurniawan
         
         };
     </script>
