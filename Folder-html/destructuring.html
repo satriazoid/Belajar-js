@@ -67,14 +67,14 @@
         };
 
 
-        let { fristName, lastName, addres: {city, 
-            street, country} } = person
+        let { fristName, lastName, address: {city, 
+            street, country}, ...other} = person
 
-        console.info(fristName);
-        console.info(lastName);
-        console.info(city);
-        console.info(street);
-        console.info(country);
+        console.info(fristName); // output eko
+        console.info(lastName); // output khannedy
+        console.info(city); // output jakarta
+        console.info(street); // output belum ada 
+        console.info(country); // output indonesia
         console.info(other);
         
         };
