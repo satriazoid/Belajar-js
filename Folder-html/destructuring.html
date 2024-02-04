@@ -112,6 +112,16 @@
             console.info(sum([1,1])); // Output 2
             console.info(sum([10, 10])); // Output 20
         };
+
+        {
+            const names = ["Eko"]; // isi default
+            const [fristName, middleName = "Kurniawan",
+            lastName = "Khannedy"] = names;
+
+            console.info(fristName);
+            console.info(middleName);
+            console.info(lastName);
+        };
     </script>
 </body>
 </html>
