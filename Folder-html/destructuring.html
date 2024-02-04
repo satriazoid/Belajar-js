@@ -136,6 +136,22 @@
         console.info(middleName); // output kurniawan
         
         };
+
+        {
+            const person = {
+            fristName: "Eko",
+            lastName: "Khannedy",
+        };
+
+        let { fristName: namaDepan, 
+            lastName: namaBelakang, 
+            middleName = "Kurniawan"} = person
+
+        console.info(namaDepan); // output Eko
+        console.info(namaBelakang); // output khannedy
+        console.info(middleName); // output kurniawan
+        
+        };
     </script>
 </body>
 </html>
