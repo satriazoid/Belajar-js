@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // const names = ["eko", "kurniawan", "khannedy"];
+        // const fristName = names[0];
+        // const middleName = names[1];
+        // const lastName = names[2];
+
+        // console.info(fristName); // Output Eko
+        // console.info(middleName); // Output Kurniawan
+        // console.info(lastName); // Output Khannedy
+
+        {
+        const names = ["eko", "kurniawan", "khannedy", "budi", "Joko"];
+        let [fristName, middleName, lastName, ...other] = names;
+
+        console.info(fristName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(other);
+        }
+
+        {
+        const person = {
+            fristName: "eko",
+            lastName: "Khannedy",
+            address : {
+                street: "jalan belum ada",
+                city: "jakarta",
+                country: "indonesia",
+            },
+            hobby: "game",
+            channel: "Pzn"
+            
+        };
+
+        // console.info(person.fristName);
+        // console.info(person.address.city);
+        // console.info(person.hobby);
+
+        let { fristName, lastName, addres, ...other } = person
+        console.info(fristName);
+        console.info(lastName);
+        console.info(addres);
+        console.info(other);
+        
+        };
+
+        {
+        const person = {
+            fristName: "eko",
+            lastName: "Khannedy",
+            address : {
+                street: "jalan belum ada",
+                city: "jakarta",
+                country: "indonesia",
+            },
+            hobby: "game",
+            channel: "Pzn"
+            
+        };
+
+
+        let { fristName, lastName, address: {city, 
+            street, country}, ...other} = person
+
+        console.info(fristName); // output eko
+        console.info(lastName); // output khannedy
+        console.info(city); // output jakarta
+        console.info(street); // output belum ada 
+        console.info(country); // output indonesia
+        console.info(other);
+        
+        };
+
+        {
+            function displayPerson(fristName, middleName, lastName){
+                console.info(person.fristName);
+                console.info(person.middleName);
+                console.info(person.lastName);
+            }
+
+            const person = {
+                fristName: "Eko",
+                middleName: "Khannedy",
+                lastName: "Kurniawan",
+            };
+
+            displayPerson(person);
+
+        };
+
+        {
+            // function sum( array ){
+            //     // return array[0] + array[1];
+            //     return first + second;
+            // }
+
+            // console.info(sum([1,1])); // Output 2
+            // console.info(sum([10, 10])); // Output 20
+
+            function sum ([first, second]) {
+                return first + second;
+            }
+
+            console.info(sum([1,1])); // Output 2
+            console.info(sum([10, 10])); // Output 20
+        };
+
+        {
+            const names = ["Eko"]; // isi default
+            const [fristName, middleName = "Kurniawan",
+            lastName = "Khannedy"] = names;
+
+            console.info(fristName);
+            console.info(middleName);
+            console.info(lastName);
+        };
+
+        {
+            const person = {
+            fristName: "Eko",
+            lastName: "Khannedy",
+        };
+
+        let { fristName, lastName, middleName = "Kurniawan"} = person
+
+        console.info(fristName); // output Eko
+        console.info(lastName); // output khannedy
+        console.info(middleName); // output kurniawan
+        
+        };
+
+        {
+            const person = {
+            fristName: "Eko",
+            lastName: "Khannedy",
+        };
+
+        let { fristName: namaDepan, 
+            lastName: namaBelakang, 
+            middleName = "Kurniawan"} = person
+
+        console.info(namaDepan); // output Eko
+        console.info(namaBelakang); // output khannedy
+        console.info(middleName); // output kurniawan
+        
+        };
+    </script>
+</body>
+</html>

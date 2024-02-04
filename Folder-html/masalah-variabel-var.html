@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masalah varibel let & var</title>
+</head>
+<body>
+    <script>
+
+        // Global scope
+        // let i = 20;
+
+        // for (let i = 0; i < 10; i++){
+        //     // Local scope
+        //     console.info(`local ${i}`); // Output 0 -> 9
+        // }
+
+        // console.info(`Global ${i}`); // Output 20
+        
+        var i = 20;
+
+        for (var i = 0; i < 10; i++){
+            // Local scope
+            console.info(`local ${i}`); // Output 0 -> 9
+        }
+
+        console.info(`Global ${i}`); // Output 10
+    </script>
+</body>
+</html>
