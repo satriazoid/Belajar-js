@@ -19,5 +19,7 @@ cara saya sendiri dan lebih menarik dan saya rasa
 ini akan menjadi project yang panjang
 _________________________________________________
 
+Update hari ini saya ganti git branch master -> main
+
 
 creadit@satriazoid 39/365
