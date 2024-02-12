@@ -11,4 +11,4 @@ let adalah cara baru untuk mendeklarasikan variabel yang diperkenalkan di ES6. l
 
 Const bersifat lokal dan tetap (immutable), artinya variabel yang dideklarasikan dengan const hanya dapat diakses dalam lingkup tertentu dan tidak dapat diubah nilainya. Const juga tidak memiliki sifat hoisting, yaitu variabel yang dideklarasikan dengan const harus dideklarasikan terlebih dahulu sebelum digunakan. Const juga tidak dapat dideklarasikan ulang dengan nama yang sama dalam lingkup yang sama, karena akan menimbulkan error. Const biasa digunakan untuk menyimpan nilai yang konstan, seperti konstanta matematika, alamat URL, atau konfigurasi. Contoh:
 
-*untuk percobaan penggunan const bisa di cek di @Folder/belajar/6-pengguanan-const.html*
+*@Folder/belajar/6-pengguanan-const.html*
