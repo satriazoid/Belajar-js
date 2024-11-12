@@ -10,21 +10,21 @@
 <script>
     
     // Ini adalah method OOP
-    function Person(){
-        this.firstName = "";
-        this.lastName = "";
+    function Person(firstName, lastName){
+        this.firstName = firstName
+        this.lastName = lastName
         this.sayHello = function (name) {
             console.info(`Hello ${name}, my name is ${this.firstName}`)
         }
     }
 
-    const eko = new Person()
-    eko.firstName = "Eko"
+    const eko = new Person("Eko", "Khannedy")
+    // eko.firstName = "Eko"
     eko.sayHello('Joko')
 
-    const budi = new Person()
-    budi.firstName = "Budi"
-    budi.lastName = "Nugroho"
+    const budi = new Person("Budi", "Nugroho")
+    // budi.firstName = "Budi"
+    // budi.lastName = "Nugroho"
     budi.sayHello("budi")
 
     console.log(eko)
