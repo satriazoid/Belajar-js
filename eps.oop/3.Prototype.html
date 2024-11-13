@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    
+<script>
+    
+    // Ini adalah method OOP
+    // Paramter di consturctor function
+    function Person(firstName, lastName){
+        this.firstName = firstName
+        this.lastName = lastName
+        this.sayHello = function (name) {
+            console.info(`Hello ${name}, my name is ${this.firstName}`)
+        }
+    }
+
+    const eko = new Person("Eko", "Khannedy");
+    const budi = new Person("Budi", "Nugroho");
+    console.log(eko)
+    console.log(budi)
+    // const eko = {
+    //     firstName: "Eko"
+    // };
+
+    // const budi = {
+    //     namaDepan: "Budi"
+    // }
+
+</script>
+
+</body>
+</html>

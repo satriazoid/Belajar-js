@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contructor inheritance</title>
+</head>
+<body>
+    
+<script>
+        // Constructor inheritance EPS 2 Code
+        function Employee(firstName){
+            this.firstName = firstName;
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, My name is ${this.firstName}`)
+            }
+        }
+
+        function Manager(firstName, lastName, nameTag){
+            Employee.call(this, firstName);
+            this.lastName = lastName;
+            this.nameTag = nameTag;
+        }
+
+        const eko = new Manager ("Eko", "Khannedy", "Mamang Eko")
+        console.info(eko)
+</script>
+
+</body>
+</html>
