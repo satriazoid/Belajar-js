@@ -19,7 +19,23 @@
         }
     }
 
+    Person.prototype.sayBye = function(){
+        console.info("Goodbye")
+    }
+
+    Person.prototype.run = function(){
+        console.info(`${this.firstName} is running`)
+    }
+
+
+
+
     const eko = new Person("Eko", "Khannedy");
+    // eko.sayBye = function(){
+    //     console.info("Good Bye");
+    // }
+
+
     const budi = new Person("Budi", "Nugroho");
     console.log(eko)
     console.log(budi)
